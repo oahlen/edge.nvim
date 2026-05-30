@@ -27,4 +27,5 @@ return {
     bg_yellow = "#f0ece2",
     bg_blue = "#e3eaf6",
     bg_purple = "#f4e9f8",
+    bg_grey = "#bcc5cf",
 }
