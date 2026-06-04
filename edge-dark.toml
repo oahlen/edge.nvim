@@ -17,7 +17,7 @@ purple = 265
 bg0 = "hsl($base, 0.15, 0.13)" # Main background
 bg1 = "hsl($base, 0.15, 0.16)" # Cursorline
 bg2 = "hsl($base, 0.15, 0.20)" # Code snippet bg
-bg3 = "hsl($base, 0.15, 0.28)" # Non text/Pmenu background
+bg3 = "hsl($base, 0.15, 0.25)" # Non text/Pmenu background
 bg4 = "hsl($base, 0.15, 0.36)" # LineNr
 
 grey = "hsl($base, 0.15, 0.50)"
@@ -71,7 +71,7 @@ Folded       = "fg1 bg1"
 LineNr       = "bg4"
 SignColumn   = "link:LineNr"
 Visual       = "- visual_bg"
-WinSeparator = "bg4"
+WinSeparator = "bg3"
 
 Pmenu      = "fg1 bg3"
 PmenuSbar  = "- bg3"
