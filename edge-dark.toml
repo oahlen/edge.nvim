@@ -1,43 +1,60 @@
 name = "edge-dev"
 background = "dark"
 
+[hues]
+
+base   = 225
+red    = 350
+orange = 25
+yellow = 40
+green  = 90
+cyan   = 195
+blue   = 215
+purple = 265
+
 [colors]
 
-bg0 = "hsl(225, 0.15, 0.13)" # background
-bg1 = "hsl(225, 0.15, 0.18)" # Cursorline
-bg2 = "hsl(225, 0.15, 0.22)" # Statusline
-bg3 = "hsl(225, 0.15, 0.28)" # Non text/Pmenu background
-bg4 = "hsl(225, 0.15, 0.36)" # LineNr
+bg0 = "hsl($base, 0.15, 0.13)" # Main background
+bg1 = "hsl($base, 0.15, 0.16)" # Cursorline
+bg2 = "hsl($base, 0.15, 0.20)" # Code snippet bg
+bg3 = "hsl($base, 0.15, 0.28)" # Non text/Pmenu background
+bg4 = "hsl($base, 0.15, 0.36)" # LineNr
 
-grey = "hsl(225, 0.1, 0.50)"
+grey = "hsl($base, 0.15, 0.50)"
 
-fg0 = "hsl(225, 0.20, 0.75)"
-fg1 = "hsl(225, 0.20, 0.85)"
-fg2 = "hsl(225, 0.20, 0.92)"
+fg0 = "hsl($base, 0.25, 0.72)"
+fg1 = "hsl($base, 0.25, 0.80)"
+fg2 = "hsl($base, 0.25, 0.88)"
 
-red = "hsl(350, 0.85, 0.75)"
-green = "hsl(90, 0.55, 0.65)"
-orange = "hsl(25, 1, 0.75)"
-yellow = "hsl(40, 0.8, 0.65)"
-blue = "hsl(215, 0.85, 0.75)"
-purple = "hsl(265, 0.75, 0.80)"
-cyan = "hsl(195, 0.65, 0.75)"
-teal = "hsl(165, 0.50, 0.50)"
-magenta = "hsl(300, 0.55, 0.55)"
+red    = "hsl($red, 0.85, 0.75)"
+orange = "hsl($orange, 1, 0.75)"
+yellow = "hsl($yellow, 0.75, 0.75)"
+green  = "hsl($green, 0.55, 0.65)"
+cyan   = "hsl($cyan, 0.75, 0.75)"
+blue   = "hsl($blue, 0.85, 0.75)"
+purple = "hsl($purple, 0.75, 0.80)"
 
 filled_red    = "red"
 filled_green  = "green"
 filled_blue   = "blue"
 filled_purple = "purple"
 
-bg_red    = "#f6e4e4"
-bg_green  = "#e5eee4"
-bg_yellow = "#f0ece2"
-bg_blue   = "#e3eaf6"
-bg_purple = "#f4e9f8"
-bg_grey   = "#bcc5cf"
+bg_red    = "mix(red, bg0, 0.1)"
+bg_green  = "mix(green, bg0, 0.1)"
+bg_yellow = "mix(yellow, bg0, 0.1)"
+bg_blue   = "mix(blue, bg0, 0.1)"
+
+visual_bg = "mix(blue, bg0, 0.15)"
+
+diff_add_bg    = "mix(green, bg0, 0.2)"
+diff_text_bg   = "mix(cyan, bg0, 0.2)"
+diff_delete_bg = "mix(red, bg0, 0.2)"
+
+black = "bg1"
+statusline_bg = "hsl($base, 0.15, 0.1)"
 
 [highlights]
+
 Normal      = "fg1 bg0"
 NormalNC    = "fg1 bg0"
 NormalFloat = "fg1 bg3"
@@ -53,19 +70,19 @@ ColorColumn  = "- bg2"
 Folded       = "fg1 bg1"
 LineNr       = "bg4"
 SignColumn   = "link:LineNr"
-Visual       = "- bg3"
+Visual       = "- visual_bg"
 WinSeparator = "bg4"
 
 Pmenu      = "fg1 bg3"
 PmenuSbar  = "- bg3"
 PmenuSel   = "bg0 filled_blue"
-PmenuThumb = "- bg_grey"
+PmenuThumb = "- grey"
 
-StatusLine    = "fg1 bg2"
-StatusLineNC  = "fg0 bg2"
+StatusLine    = "fg1 statusline_bg"
+StatusLineNC  = "fg0 statusline_bg"
 TabLine       = "fg1 bg4"
-TabLineFill   = "fg1 bg2"
-TabLineSel = "bg0 filled_blue"
+TabLineFill   = "fg1 statusline_bg"
+TabLineSel    = "bg0 filled_blue"
 
 Search     = "bg0 yellow"
 CurSearch  = "bg0 orange"
@@ -77,9 +94,9 @@ Added   = "filled_green"
 Changed = "filled_blue"
 Removed = "filled_red"
 
-DiffAdd    = "green bg_green"
-DiffText   = "blue bg_blue"
-DiffDelete = "red bg_red"
+DiffAdd    = "green diff_add_bg"
+DiffText   = "blue diff_text_bg"
+DiffDelete = "red diff_delete_bg"
 
 ErrorMsg   = "red"
 ModeMsg    = "grey"
@@ -283,7 +300,7 @@ NvimTreeGitDirtyIcon = "red"
 
 FzfLuaBorder       = "link:Comment"
 FzfLuaBufNr        = "green"
-FzfLuaFzfScrollbar = "bg_grey"
+FzfLuaFzfScrollbar = "grey"
 FzfLuaHeaderBind   = "link:Special"
 FzfLuaHeaderText   = "link:Title"
 FzfLuaLivePrompt   = "fg1"
@@ -309,13 +326,13 @@ AgenticStatusFailed             = "red"
 AgenticStatusPending            = "purple"
 AgenticTitle                    = "bg0 filled_blue b"
 
-WhichKeyNormal = "fg1 bg2"
+WhichKeyNormal = "fg1 statusline_bg"
 
 [globals]
 terminal_color_0          = "bg2"
 terminal_color_1          = "red"
 terminal_color_2          = "green"
-terminal_color_3          = "yellow"
+terminal_color_3          = "orange"
 terminal_color_4          = "blue"
 terminal_color_5          = "purple"
 terminal_color_6          = "cyan"
