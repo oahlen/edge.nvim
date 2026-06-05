@@ -9,7 +9,8 @@ orange = 25
 yellow = 40
 green  = 90
 cyan   = 195
-blue   = 215
+sky    = 205
+blue   = 220
 purple = 265
 
 [colors]
@@ -29,8 +30,9 @@ fg2 = "hsl($base, 0.25, 0.88)"
 red    = "hsl($red, 0.85, 0.75)"
 orange = "hsl($orange, 1, 0.75)"
 yellow = "hsl($yellow, 0.75, 0.75)"
-green  = "hsl($green, 0.55, 0.65)"
-cyan   = "hsl($cyan, 0.75, 0.75)"
+green  = "hsl($green, 0.50, 0.65)"
+cyan   = "hsl($cyan, 0.65, 0.75)"
+sky   = "hsl($sky, 1, 0.75)"
 blue   = "hsl($blue, 0.85, 0.75)"
 purple = "hsl($purple, 0.75, 0.80)"
 
@@ -143,9 +145,9 @@ Identifier   = "fg1"
 Include      = "blue"
 Italic       = "fg1 - i"
 Keyword      = "purple"
-Operator     = "fg1"
+Operator     = "sky"
 PreProc      = "cyan"
-Special      = "orange"
+Special      = "sky"
 Statement    = "purple"
 StorageClass = "purple"
 String       = "green"
@@ -249,11 +251,11 @@ csvCol0 = "fg1"
 csvCol1 = "blue"
 csvCol2 = "yellow"
 csvCol3 = "cyan"
-csvCol4 = "green"
+csvCol4 = "orange"
 csvCol5 = "purple"
-csvCol6 = "red"
-csvCol7 = "cyan"
-csvCol8 = "grey"
+csvCol6 = "green"
+csvCol7 = "sky"
+csvCol8 = "red"
 
 # Plugins
 BlinkCmpMenu              = "fg1 bg3"
