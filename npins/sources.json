@@ -9,10 +9,10 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "2a5bcc7ad8325aed2d7844692285b0abede814b0",
-      "url": "https://github.com/oahlen/huevim/archive/2a5bcc7ad8325aed2d7844692285b0abede814b0.tar.gz",
-      "hash": "sha256-Z6CSRTuLCyNshBJYaVmMENRRyNi6lE5XHatnZiO9ShM="
+      "revision": "2a640deb1846ec3cb71da2dd9279bcc1135cdd52",
+      "url": "https://github.com/oahlen/huevim/archive/2a640deb1846ec3cb71da2dd9279bcc1135cdd52.tar.gz",
+      "hash": "sha256-QOVeKWOjiE8kw7RNcYCdc+oDZOL9hO8qxy0blXwrGxo="
     }
   },
-  "version": 7
+  "version": 8
 }
