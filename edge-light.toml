@@ -11,7 +11,7 @@ green  = 90
 cyan   = 195
 sky    = 205
 blue   = 220
-purple = 265
+purple = 275
 
 [colors]
 
@@ -19,7 +19,7 @@ bg0 = "hsl($base, 0.2, 0.98)" # Main background
 bg1 = "hsl($base, 0.2, 0.95)" # Cursorline
 bg2 = "hsl($base, 0.2, 0.92)" # Statusline/Code snippet bg
 bg3 = "hsl($base, 0.2, 0.88)" # Non text/Pmenu background
-bg4 = "hsl($base, 0.2, 0.80)" # LineNr
+bg4 = "hsl($base, 0.2, 0.78)" # LineNr
 
 grey = "hsl($base, 0.15, 0.50)"
 
@@ -34,7 +34,7 @@ green  = "hsl($green, 0.75, 0.25)"  # Check
 cyan   = "hsl($cyan, 0.75, 0.30)"
 sky    = "hsl($sky, 0.75, 0.28)"
 blue   = "hsl($blue, 0.55, 0.45)"   # Check
-purple = "hsl($purple, 0.45, 0.50)"
+purple = "hsl($purple, 0.38, 0.50)"
 
 filled_red    = "lighten(red, 0.1)"
 filled_green  = "lighten(green, 0.1)"
@@ -67,7 +67,7 @@ Whitespace  = "bg3"
 
 Cursor        = "bg0 fg1"
 Cursorline   = "- bg1"
-CursorlineNr = "fg1 bg1 b"
+CursorlineNr = "orange bg1 b"
 ColorColumn  = "- bg2"
 Folded       = "fg1 bg1"
 LineNr       = "bg4"
@@ -334,7 +334,7 @@ WhichKeyNormal = "fg1 statusline_bg"
 terminal_color_0          = "bg2"
 terminal_color_1          = "red"
 terminal_color_2          = "green"
-terminal_color_3          = "orange"
+terminal_color_3          = "yellow"
 terminal_color_4          = "blue"
 terminal_color_5          = "purple"
 terminal_color_6          = "cyan"
